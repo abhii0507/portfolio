@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhi-Portfolio Website</title>
+    <link rel="icon" href="/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600;700;800;900&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./about.html"> -->
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./querry.css" />
+    
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="left">Abhishek's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          <div>Hi, My name is <span class="purple">Abhi</span></div>
+          <div>I am a passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <a href="./resume - abhishek.pdf" download="resume-abhi.pdf"
+              ><button class="btn">Download resume</button></a
+            >
+            <a href="https://github.com/abhii0507"
+              ><button class="btn">Visit Github</button></a
+            >
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="./images/pic.jpg" alt="My photu" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="secondSection">
+        <h1>Experiences</h1>
+
+        <div class="hori">
+          <div class="vert">
+            <img class="top-img" src="./images/school.png" alt="" />
+            <div class="vert-title">
+              Matriculation<br />
+              (2018)
+            </div>
+            <div class="vert-desc">
+              I have completed my Matriculation from DAV Kathara , Bokaro with
+              an impressive score of 91% .
+            </div>
+          </div>
+
+          <div class="vert">
+            <img class="top-img" src="./images/school.png" alt="" />
+            <div class="vert-title">
+              Intermediate<br />
+              (2020)
+            </div>
+            <div class="vert-desc">
+              I have completed my Intermediate from Sarvodaya Sr. Secondary
+              School, Kota securing 89.8% in Boards. I also attemped JEE Main
+              and qualify the exam with 90+ percentile.
+            </div>
+          </div>
+
+          <div class="vert">
+            <img class="top-img" src="./images/College.png" alt="" />
+            <div class="vert-title">
+              B Tech <br />
+              (2020-2024)
+            </div>
+            <div class="vert-desc">
+              Currently, I am pursuing my Btech from BIT Sindri,Dhanbad from
+              Electronics and Communication Branch of Engineering.
+            </div>
+          </div>
+
+          <div class="vert">
+            <img class="top-img" src="./images/ngo.png" alt="" />
+            <div class="vert-title">
+              Udaan <br />
+              (2021)
+            </div>
+            <div class="vert-desc">
+              During covid times, me and one of my friend started a NGO named
+              Udaan Faith Foundation with a motive of serving underprivileged
+              and needy people . Currently our strong team is running with 150+
+              members and proudly I am the Co-founder of the team.
+            </div>
+          </div>
+
+          <div class="vert">
+            <img class="top-img" src="./images/frontend.png" alt="" />
+            <div class="vert-title">
+              Frontend <br />
+              (2022)
+            </div>
+            <div class="vert-desc">
+              I learned these skills of frontend (HTML, CSS, BootStrap and
+              JavaScript) from Udemy under the guidance of Angela Yu Mam. I also
+              build some basic projects that are hosted on my github.
+            </div>
+          </div>
+
+          <div class="vert">
+            <img class="top-img" src="./images/java.png" alt="" />
+            <div class="vert-title">
+              Java <br />
+              (2023)
+            </div>
+            <div class="vert-desc">
+              I have also learned Java Programming Language and basics of Data
+              Structures and Algorithms from PrepInsta. Currently, I am working
+              hard on improving my problem solving ability.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="first-footer">
+          <h3>Abhi's Developer Portfolio</h3>
+        </div>
+        <div class="second-footer">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="third-footer">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="fourth-footer">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="./about.html">About</a></li
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="text-center">
+        Copyright &#169; www.abhis_portfolio.com | All Rights Reserved
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+
+      var typed = new Typed("#element", {
+        strings: ["Java Programmer", "Web Developer"],
+        typeSpeed: 80,
+      });
+    </script>
+  </body>
+</html>
